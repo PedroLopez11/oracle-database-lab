@@ -1,0 +1,14 @@
+== 1. Docker ==
+Cliente 29.8.2 / Motor 
+== 2. Imagen y digest ==
+== 3. Contenedor ==
+== 4. Volumen persistente ==
+== 5. Base de datos lista (debe ser 1 o mas) ==
+0
+== 6. Entornos de negocio ==
+== 7. Java ==
+openjdk version "17.0.20.1" 2026-08-18
+== 8. SQLcl ==
+SQLcl: Release 26.3.0.0 Production Build: 26.3.0.260.1620
+== 9. Secretos fuera de Git ==
+OK: config/.env esta ignorado por Git
