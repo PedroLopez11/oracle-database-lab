@@ -17,4 +17,11 @@ ts() { date -u +%Y%m%dT%H%M%SZ; }
 export ORDS_HOME="/opt/oracle/ords"
 export ORDS_CONFIG="/etc/ords/config"
 export ORDS_LOGS="/var/log/ords"
-export ORDS_PORT=8080
+export ORDS_PORT=8080 #Lab 4: operación del entorno (backup/restauración y evidencia por laboratorio)
+export HELPER_IMG="ubuntu:24.04" # imagen auxiliar con GNU tar para copiar el volumen
+export DATA_ROOT="/opt/oracle/oradata" # punto de montaje del volumen dentro del contenedor
+export EVID_LAB4="docs/bitacora/lab4/evidencia" # evidencia del Lab 4: script/, spool/, config/
+# Lab 4: operación del entorno (backup/restauración y evidencia por laboratorio)
+export HELPER_IMG="ubuntu:24.04" # imagen auxiliar con GNU tar para copiar el volumen
+export DATA_ROOT="/opt/oracle/oradata" # punto de montaje del volumen dentro del contenedor
+export EVID_LAB4="docs/bitacora/lab4/evidencia" # evidencia del Lab 4: script/, spool/, config/
