@@ -1,0 +1,50 @@
+== 1. Copia previa al simulacro ==
+== Copia terminada ==
+1.4G	/home/pedro/oracle-database-lab/backups/20261027T181147Z_lab5-pre-simulacro
+Para restaurarla: bash scripts/ops/restaurar-estado.sh /home/pedro/oracle-database-lab/backups/20261027T181147Z_lab5-pre-simulacro
+Matrículas antes: 60000
+== 2. Error humano leve: DROP TABLE sin PURGE -> FLASHBACK TABLE ... TO BEFORE DROP ==
+
+Session altered.
+
+
+Table dropped.
+
+
+ORIGINAL_NAME	 OBJECT_NAME			  TYPE	 DROPTIME
+---------------- -------------------------------- ------ -------------------
+ACA_MATRICULAS	 BIN$Xtd/5Ip9Ak/gYwIAEaw3vg==$0   TABLE  2026-10-27:18:20:22
+IDX_ACA_MAT_EST  BIN$Xtd/5Ip6Ak/gYwIAEaw3vg==$0   INDEX  2026-10-27:18:20:22
+SYS_C008673	 BIN$Xtd/5Ip8Ak/gYwIAEaw3vg==$0   INDEX  2026-10-27:18:20:22
+IDX_ACA_MAT_ASI  BIN$Xtd/5Ip5Ak/gYwIAEaw3vg==$0   INDEX  2026-10-27:18:20:22
+UQ_ACA_MATRICULA BIN$Xtd/5Ip7Ak/gYwIAEaw3vg==$0   INDEX  2026-10-27:18:20:22
+_UNICA
+
+
+5 rows selected.
+
+
+Flashback complete.
+
+Matrículas tras FLASHBACK TABLE: 60000
+== 3. Error humano grave: DROP TABLE ... PURGE (sin papelera) ==
+
+Session altered.
+
+
+Table dropped.
+
+Matrículas ahora: ORA-00942: table or view ADMIN_ACADEMIA.ACA_MATRICULAS does not exist
+== 4. Restauración de la copia, cronometrada ==
+  t=490s  docker=unhealthy  cdb/pdb=no-disponible
+  t=500s  docker=unhealthy  cdb/pdb=no-disponible
+  t=510s  docker=unhealthy  cdb/pdb=no-disponible
+  t=520s  docker=unhealthy  cdb/pdb=no-disponible
+  t=530s  docker=unhealthy  cdb/pdb=no-disponible
+  t=540s  docker=unhealthy  cdb/pdb=no-disponible
+  t=550s  docker=unhealthy  cdb/pdb=no-disponible
+  t=560s  docker=unhealthy  cdb/pdb=no-disponible
+  t=570s  docker=unhealthy  cdb/pdb=no-disponible
+  t=580s  docker=unhealthy  cdb/pdb=no-disponible
+  t=590s  docker=unhealthy  cdb/pdb=no-disponible
+  t=600s  docker=unhealthy  cdb/pdb=no-disponible
