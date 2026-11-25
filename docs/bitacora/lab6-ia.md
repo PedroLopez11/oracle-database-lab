@@ -1,6 +1,6 @@
 He leído la política de uso de IA de la asignatura.
 
-# Declaración de uso de IA · Lab 6 · 
+# Declaración de uso de IA · Lab 6 · E039 
 
 <!--
 CÓMO SE RELLENA (léelo y borra este comentario si quieres; el script de evaluación lo ignora)
@@ -18,19 +18,38 @@ CÓMO SE RELLENA (léelo y borra este comentario si quieres; el script de evalua
   dices para qué lo usaste y adjuntas aquí el código y el prompt LITERAL.
 -->
 
-No he usado IA.
-
 ## Entrada 1
-- **Herramienta:** 
-- **Prompt (literal, copiado tal cual):**
-```text
+- **Herramienta: Gemini** 
+- **Prompt:**
+```
+En oracle database, que muestran exactamente los parámetros USERNAME, MODULE, ACTION y CLIENT_IDENTIFIER?
 
 ```
-- **Código recibido (el fragmento, o la ruta del archivo donde está):**
-```sql
+- **Dónde lo usé (parte, script o pregunta):**
+  Al responder la pregunta 6.
+- **Propósito (para qué lo necesitaba):**
+  Aclarar mis dudas sobre que información guarda cada parámetro para compararlos.
+
+  ## Entrada 2
+- **Herramienta: Gemini** 
+- **Prompt:**
+```
+Una PDB aparece como OPEN al comprobar su estado pero al intentar conectarse a ella devuelve el error ORA-01109: database not open. Que puede estar pasando?
 
 ```
-- **Dónde lo usé (parte, script o pregunta):** 
-- **Propósito (para qué lo necesitaba):** 
-- **Qué hace (con mis palabras; línea a línea si es SQL corto):** 
-- **Evidencia de ejecución (archivo de docs/bitacora/lab6/evidencia con mi cabecera):** 
+- **Dónde lo usé (parte, script o pregunta):**
+  Al responder la pregunta 5.
+- **Propósito (para qué lo necesitaba):**
+  Esclarecer la razón de la aparente incongruencia en el error, después entendí por que sí tenía sentido.
+
+    ## Entrada 3
+- **Herramienta: Gemini** 
+- **Prompt:**
+```
+Porque desde la CDB raíz se ven menos usuarios que desde la FREEPDB1 siendo el mismo perfil (los mismos privilegios)?
+
+```
+- **Dónde lo usé (parte, script o pregunta):**
+  Al responder la pregunta 9.
+- **Propósito (para qué lo necesitaba):**
+  Curiosidad sobre la razón por la que el mismo usuario ve un número distinto con DBA_USERS.
